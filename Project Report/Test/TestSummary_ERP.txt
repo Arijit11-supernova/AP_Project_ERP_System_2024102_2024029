@@ -1,0 +1,28 @@
+Test Summary – University ERP System
+
+1. Overview
+This document summarizes the testing performed on the University ERP system. 
+The objective of testing was to verify correctness of functionality, role-based access control, and system stability.
+
+2. Test Execution Details
+Total number of test cases designed: 10  
+Total number of test cases executed: 10  
+
+3. Results
+Number of test cases passed: 10  
+Number of test cases failed: 0  
+
+4. Key Observations
+- The login system correctly authenticates users and redirects them based on their roles (Student, Instructor, Admin).
+- Students are able to view available sections, enroll successfully, and view their enrollments.
+- Instructors can view their assigned sections and enter grades accurately.
+- The maintenance mode feature successfully prevents students and instructors from performing write operations when enabled by the admin.
+- The system remained stable during normal and negative test conditions.
+
+5. Limitations
+- UI design is functional but not highly optimized for advanced user experience.
+- Edge case validations are basic but sufficient for project-level requirements.
+
+6. Conclusion
+All major features of the University ERP system were tested successfully. 
+The system satisfies the functional requirements and is considered stable and ready for demonstration and evaluation.

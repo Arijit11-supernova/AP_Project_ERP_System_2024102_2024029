@@ -1,0 +1,53 @@
+Test Plan – University ERP
+
+1. Objective
+To verify that the ERP system works correctly for Student, Instructor, and Admin roles.
+
+2. Scope
+Testing covers:
+- Login system
+- Student enrollment
+- Instructor grade entry
+- Admin maintenance mode
+
+3. Test Environment
+OS: Windows
+Language: Java
+Database: MySQL
+UI: Java Swing
+
+4. Test Cases
+
+TC1 – Valid Login
+Steps:
+1. Open app
+2. Enter correct username and password
+Expected:
+User dashboard opens
+
+TC2 – Invalid Login
+Steps:
+Enter correct username with wrong password
+Expected:
+Error message displayed
+
+TC3 – Student Enrollment
+Steps:
+Login as student → Select section → Click Enroll
+Expected:
+Enrollment saved in database
+
+TC4 – Instructor Grade Entry
+Steps:
+Login as instructor → Select student → Enter marks → Save
+Expected:
+Grades saved successfully
+
+TC5 – Maintenance Mode
+Steps:
+Admin turns maintenance ON → Student tries to enroll
+Expected:
+Student is blocked
+
+5. Exit Criteria
+All test cases must pass without system crash

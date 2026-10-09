@@ -1,0 +1,37 @@
+University ERP – How to Run
+
+Requirements:
+- Java 8 or above
+- MySQL
+
+Steps:
+1. Import database:
+   - Run schema.sql
+   - Run sample_data.sql
+
+2. Configure database in DBConnection.java:
+   - URL
+   - Username
+   - Password
+
+3. Run:
+   - Open project in IntelliJ / Eclipse
+   - Run Main.java
+
+Sample Credentials:
+
+Admin:
+Username: admin1
+Password: admin123
+
+Instructor:
+Username: inst1
+Password: inst123
+
+Student 1:
+Username: stu1
+Password: stu123
+
+Student 2:
+Username: stu2
+Password: stu123

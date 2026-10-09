@@ -1,0 +1,63 @@
+-- AUTH DATABASE TABLE
+CREATE TABLE users_auth (
+  user_id INT PRIMARY KEY,
+  username VARCHAR(50),
+  role VARCHAR(20),
+  password_hash VARCHAR(255),
+  status VARCHAR(20),
+  last_login TIMESTAMP
+);
+
+-- STUDENTS
+CREATE TABLE students (
+  user_id INT PRIMARY KEY,
+  roll_no VARCHAR(20),
+  program VARCHAR(50),
+  year INT
+);
+
+-- INSTRUCTORS
+CREATE TABLE instructors (
+  user_id INT PRIMARY KEY,
+  department VARCHAR(50)
+);
+
+-- COURSES
+CREATE TABLE courses (
+  code VARCHAR(10) PRIMARY KEY,
+  title VARCHAR(100),
+  credits INT
+);
+
+-- SECTIONS
+CREATE TABLE sections (
+  section_id INT PRIMARY KEY,
+  course_code VARCHAR(10),
+  instructor_id INT,
+  schedule VARCHAR(50),
+  room VARCHAR(20),
+  capacity INT,
+  semester VARCHAR(20),
+  year INT
+);
+
+-- ENROLLMENTS
+CREATE TABLE enrollments (
+  student_id INT,
+  section_id INT,
+  status VARCHAR(20)
+);
+
+-- GRADES
+CREATE TABLE grades (
+  enrollment_id INT,
+  component VARCHAR(50),
+  score INT,
+  final_grade VARCHAR(5)
+);
+
+-- SETTINGS
+CREATE TABLE settings (
+  setting_key VARCHAR(50),
+  setting_value VARCHAR(50)
+);

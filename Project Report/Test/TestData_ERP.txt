@@ -1,0 +1,29 @@
+Small Test Dataset
+
+Admin:
+Username: admin1
+Password: admin123
+Role: ADMIN
+
+Instructor:
+Username: inst1
+Password: inst123
+Role: INSTRUCTOR
+
+Students:
+1. Username: stu1
+   Password: stu123
+
+2. Username: stu2
+   Password: stu123
+
+Course:
+CSE101 – Introduction to Programming
+
+Section:
+Section ID: 1
+Instructor: inst1
+
+Enrollments:
+stu1 enrolled in Section 1
+stu2 enrolled in Section 1
