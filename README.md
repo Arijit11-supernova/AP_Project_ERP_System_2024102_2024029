@@ -88,3 +88,7 @@ See [`docs/Test_Plan.md`](docs/Test_Plan.md) and [`docs/Test_Summary.md`](docs/T
 |------|----------|--------------|
 | Aditya Dev | 2024029 | UI design, Student module, database integration |
 | Arijit Chowdhary | 2024102 | Admin module, Instructor module, maintenance mode |
+
+## Project Demo Video
+
+Watch our ERP System demonstration: https://drive.google.com/file/d/1MIjWI1CiL30Gsf-1Lug8Rgi2A45YId3J/view?usp=sharing
