@@ -1,0 +1,24 @@
+# Compiled output
+*.class
+out/
+bin/
+build/
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated CSV exports
+*.csv
+
+# Local secrets (keep real DB passwords out of git)
+db.properties
