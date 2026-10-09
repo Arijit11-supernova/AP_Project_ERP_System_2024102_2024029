@@ -29,12 +29,13 @@ Quiz and assignment marks are summed over all quizzes/assignments in the section
 
 ```
 .
-├── src/com/Arijit_Aditya/erp/
-│   └── ui/swing/ERPAppGUI.java     # entry point (main)
-├── lib/                            # MySQL Connector/J, jBCrypt jars
+├── erp/
+│   ├── auth/  dao/  database/  db/  main/
+│   ├── models/  services/  ui/  utils/
+│   └── GenerateHash.java
 ├── database/
-│   ├── schema.sql                  # creates auth_db + erp_db and all tables
-│   └── sample_data.sql             # demo users, courses, sections, marks
+│   ├── schema.sql              # creates auth_db + erp_db and all tables
+│   └── sample_data.sql         # demo users, courses, sections, marks
 └── docs/
     ├── Project_Report.md
     ├── Test_Plan.md
@@ -44,6 +45,8 @@ Quiz and assignment marks are summed over all quizzes/assignments in the section
 ## Setup
 
 **Requirements:** Java JDK 8+, MySQL Server 8.0, any Java IDE (IntelliJ IDEA / Eclipse / VS Code).
+
+**Dependencies** (add to the classpath): [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/) and [jBCrypt](https://mvnrepository.com/artifact/org.mindrot/jbcrypt).
 
 1. **Create the databases and tables, then load sample data**
 
@@ -62,8 +65,7 @@ Quiz and assignment marks are summed over all quizzes/assignments in the section
    Password: <your MySQL password>
    ```
 
-3. **Add the jars in `lib/` to the project classpath** and run `main()` in
-   `src/com/Arijit_Aditya/erp/ui/swing/ERPAppGUI.java`. The login window should appear.
+3. **Run** `main()` in `erp/ui/swing/ERPAppGUI.java`. The login window should appear.
 
 ## Demo credentials
 
